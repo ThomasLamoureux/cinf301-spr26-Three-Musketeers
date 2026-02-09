@@ -1,0 +1,130 @@
+/* First-page stylesheet
+	 Provides simple, responsive layout and image gallery styling for first-page/index.html
+*/
+
+/* -- Reset and base rules -- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+	--bg: #f7f8fb;
+	--card: #ffffff;
+	--accent: #1e6fb8;
+	--muted: #6b7280;
+	--max-width: 1100px;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	background: var(--bg);
+	color: #0f172a;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 2rem 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+/* center content and add a subtle card feel */
+main, header, footer {
+	max-width: var(--max-width);
+	width: 100%;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+header h1 {
+	color: var(--accent);
+	font-size: 2rem;
+	letter-spacing: -0.5px;
+}
+
+nav {
+	margin: 0.5rem 0 1rem 0;
+	text-align: center;
+}
+
+nav a {
+	color: var(--accent);
+	text-decoration: none;
+	margin: 0 0.5rem;
+	font-weight: 600;
+}
+
+main {
+	background: var(--card);
+	padding: 1.25rem;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(15,23,42,0.06);
+}
+
+section {
+	margin: 0.5rem 0;
+}
+
+section h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
+}
+
+/* Image gallery: responsive grid using the section directly so no HTML changes required */
+section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1rem;
+	align-items: start;
+	justify-items: center;
+}
+
+/* Images: constrain, make responsive and add hover affordance */
+section img {
+	width: 100%;
+	max-width: 340px;
+	height: auto;
+	display: block;
+	border-radius: 8px;
+	box-shadow: 0 6px 12px rgba(15,23,42,0.06);
+	object-fit: cover;
+	transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+section img:hover,
+section img:focus {
+	transform: translateY(-4px) scale(1.02);
+	box-shadow: 0 16px 32px rgba(15,23,42,0.12);
+	outline: none;
+}
+
+footer {
+	margin-top: 1rem;
+	text-align: center;
+	color: var(--muted);
+	font-size: 0.95rem;
+}
+
+/* Accessibility: visible focus for keyboard users */
+a:focus, button:focus, img:focus {
+	outline: 3px solid rgba(30,111,184,0.18);
+	outline-offset: 2px;
+}
+
+/* Smaller screens adjustments */
+@media (max-width: 480px) {
+	body { padding: 1rem; }
+	header h1 { font-size: 1.4rem; }
+	section img { max-width: 280px; }
+}
+
+/* Print-friendly rules */
+@media print {
+	body { background: #fff; }
+	main { box-shadow: none; }
+}
+
