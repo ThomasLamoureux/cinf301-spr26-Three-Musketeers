@@ -17,7 +17,8 @@ html, body {
 }
 
 body {
-	font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	/* GOOGLEFONT1 */
+	font-family: 'Crimson Text', serif;
 	background: var(--bg);
 	color: #0f172a;
 	line-height: 1.5;
@@ -25,89 +26,113 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	padding: 2rem 1rem;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 /* center content and add a subtle card feel */
-main, header, footer {
+.content-wrapper {
 	max-width: var(--max-width);
 	width: 100%;
-}
-
-header {
-	text-align: center;
-	margin-bottom: 1rem;
-}
-
-header h1 {
-	color: var(--accent);
-	font-size: 2rem;
-	letter-spacing: -0.5px;
-}
-
-nav {
-	margin: 0.5rem 0 1rem 0;
-	text-align: center;
-}
-
-nav a {
-	color: var(--accent);
-	text-decoration: none;
-	margin: 0 0.5rem;
-	font-weight: 600;
-}
-
-main {
 	background: var(--card);
 	padding: 1.25rem;
 	border-radius: 10px;
 	box-shadow: 0 8px 20px rgba(15,23,42,0.06);
 }
 
-section {
-	margin: 0.5rem 0;
-}
-
-section h2 {
+.main-header {
 	text-align: center;
 	margin-bottom: 1rem;
-	font-size: 1.25rem;
+	max-width: var(--max-width);
+	width: 100%;
 }
 
-/* Image gallery: responsive grid using the section directly so no HTML changes required */
-section {
+.hero-title {
+	/* GOOGLEFONT2 */
+	font-family: 'MedievalSharp', cursive;
+	color: var(--accent);
+	font-size: 3rem;
+	letter-spacing: 1px;
+	margin-bottom: 0.5rem;
+}
+
+.top-nav {
+	margin: 0.5rem 0 1.5rem 0;
+	text-align: center;
+	width: 100%;
+}
+
+.top-nav a {
+	color: var(--accent);
+	text-decoration: none;
+	margin: 0 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+	color: #111;
+}
+
+#photo-gallery {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 	gap: 1rem;
 	align-items: start;
 	justify-items: center;
+	margin-bottom: 3rem;
 }
 
-/* Images: constrain, make responsive and add hover affordance */
-section img {
+/* Table styling */
+.musketeer-table {
 	width: 100%;
-	max-width: 340px;
-	height: auto;
-	display: block;
-	border-radius: 8px;
-	box-shadow: 0 6px 12px rgba(15,23,42,0.06);
-	object-fit: cover;
-	transition: transform 180ms ease, box-shadow 180ms ease;
+	border-collapse: collapse;
+	margin: 1.5rem 0;
+	font-size: 1.1rem;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-section img:hover,
-section img:focus {
-	transform: translateY(-4px) scale(1.02);
-	box-shadow: 0 16px 32px rgba(15,23,42,0.12);
-	outline: none;
+.musketeer-table thead tr {
+	background-color: #333;
+	color: #ffffff;
+	text-align: left;
 }
 
-footer {
-	margin-top: 1rem;
+.musketeer-table th,
+.musketeer-table td {
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+}
+
+/* Alternating row colors */
+.musketeer-table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+.musketeer-table tbody tr:nth-of-type(odd) {
+	background-color: #ffffff;
+}
+
+.musketeer-table tbody tr:last-of-type {
+	border-bottom: 3px solid var(--accent);
+}
+
+.site-footer {
+	margin-top: 2rem;
 	text-align: center;
 	color: var(--muted);
 	font-size: 0.95rem;
+	width: 100%;
 }
+
+.site-footer i {
+	margin-bottom: 0.5rem;
+	display: block;
+}
+
+/* Selectors used: .content-wrapper, .main-header, .hero-title, .top-nav, .musketeer-table, .site-footer, #photo-gallery, #table-section */
+
 
 /* Accessibility: visible focus for keyboard users */
 a:focus, button:focus, img:focus {

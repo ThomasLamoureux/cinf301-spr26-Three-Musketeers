@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Three Musketeers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="top">
 
-<header>
-    <h1>Three Musketeers</h1>
+<header class="main-header">
+    <h1 class="hero-title">Three Musketeers</h1>
+    <!-- FONTAWESOME1 -->
+    <i class="fa-solid fa-shield-halved fa-2x"></i>
 </header>
 
-<nav>
-    <!-- Navigation will go here later -->
+<nav class="top-nav">
+    <a href="#top">Home</a>
+    <a href="#table-section">Musketeer Data</a>
 </nav>
 
-<main>
+<main class="content-wrapper">
 
-    <section>
+    <section id="photo-gallery">
         <h2>Photos</h2>
 
         <img src="images/image1.jpg" alt="Musketeer 1" width="300">
@@ -27,10 +34,47 @@
 
     </section>
 
+    <section id="table-section">
+        <h2>The Musketeers and D'Artagnan</h2>
+        <table class="musketeer-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Defining Characteristic</th>
+                    <th>Secret Background</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Athos</td>
+                    <td>Father figure, noble</td>
+                    <td>Comte de la Fère, former husband of Milady</td>
+                </tr>
+                <tr>
+                    <td>Porthos</td>
+                    <td>Strength, vanity</td>
+                    <td>Loves fine clothes and luxury</td>
+                </tr>
+                <tr>
+                    <td>Aramis</td>
+                    <td>Religious ambition, intrigue</td>
+                    <td>Frequently caught between the church and the sword</td>
+                </tr>
+                <tr>
+                    <td>D'Artagnan</td>
+                    <td>Hot-headed, brave</td>
+                    <td>A young Gascon who seeks to join the Musketeers</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
 </main>
 
-<footer>
-    <!-- Footer content later -->
+<footer class="site-footer">
+    <!-- FONTAWESOME2 -->
+    <i class="fa-solid fa-scroll fa-2x"></i>
+    <p>&copy; 2026 Three Musketeers Project</p>
 </footer>
 
 </body>
