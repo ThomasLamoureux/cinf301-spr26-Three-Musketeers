@@ -79,60 +79,235 @@ body {
         border-bottom: 2px solid #d32f2f;
 }
 
-#photo-gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 1.5rem;
-        align-items: start;
-        justify-items: center;
-        margin-bottom: 3rem;
+.section-heading {
+
+	text-align: center;
+
+	margin-bottom: 1.5rem;
+
+	font-size: 1.5rem;
+
+	color: var(--muted);
+
+	border-bottom: 1px solid var(--silver);
+
+	display: inline-block;
+
+	padding-bottom: 5px;
+
 }
+
+
+
+.gallery-section {
+
+	display: grid;
+
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+	gap: 1.5rem;
+
+	align-items: start;
+
+	justify-items: center;
+
+	margin-bottom: 3rem;
+
+	padding: 20px;
+
+	background-color: #fff9f9;
+
+	border-radius: 8px;
+
+}
+
+
+
+.candy-img {
+
+	width: 100%;
+
+	max-width: 340px;
+
+	height: auto;
+
+	display: block;
+
+	border-radius: 8px;
+
+	border: 4px solid var(--silver);
+
+	box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+
+	transition: all 0.3s ease;
+
+}
+
+
+
+.candy-img:hover {
+
+	transform: scale(1.05);
+
+	border-color: var(--accent);
+
+}
+
+
+
+.data-section {
+
+	padding: 20px;
+
+	margin-top: 20px;
+
+}
+
+
 
 /* Table styling */
+
 .musketeer-table {
+
         width: 100%;
+
         border-collapse: collapse;
+
         margin: 1.5rem 0;
+
         font-size: 1.1rem;
+
         box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+
+	overflow: hidden;
+
+	border-radius: 8px;
+
 }
+
+
 
 .musketeer-table thead tr {
+
         background-color: var(--accent);
+
         color: #ffffff;
+
         text-align: left;
+
 }
+
+
 
 .musketeer-table th,
+
 .musketeer-table td {
-        padding: 12px 15px;
+
+        padding: 15px 20px;
+
         border: 1px solid #efebe9;
+
 }
+
+
 
 /* Alternating row colors */
+
 .musketeer-table tbody tr:nth-of-type(even) {
+
         background-color: #fce4ec; /* Light pinkish-red hints */
+
 }
+
+
 
 .musketeer-table tbody tr:nth-of-type(odd) {
+
         background-color: #ffffff;
+
 }
+
+
+
+/* Hover effect for table rows */
+
+.musketeer-table tbody tr:hover {
+
+	background-color: #f8bbd0;
+
+	cursor: default;
+
+}
+
+
 
 .musketeer-table tbody tr:last-of-type {
+
         border-bottom: 3px solid var(--accent);
-}
-.site-footer {
-	margin-top: 2rem;
-	text-align: center;
-	color: var(--muted);
-	font-size: 0.95rem;
-	width: 100%;
+
 }
 
-.site-footer i {
-	margin-bottom: 0.5rem;
-	display: block;
+
+
+.site-footer {
+
+        margin-top: 2rem;
+
+        text-align: center;
+
+        color: var(--muted);
+
+        font-size: 0.95rem;
+
+        width: 100%;
+
+	padding: 20px 0;
+
 }
+
+
+
+.site-footer i {
+
+        margin-bottom: 0.5rem;
+
+        display: block;
+
+	color: #d32f2f;
+
+}
+
+
+
+/* Selectors used for styling (Class/ID): 
+
+   1. .content-wrapper
+
+   2. .main-header
+
+   3. .hero-title
+
+   4. .top-nav
+
+   5. .section-heading
+
+   6. .gallery-section
+
+   7. .candy-img
+
+   8. .data-section
+
+   9. .musketeer-table
+
+   10. .site-footer
+
+   11. #photo-gallery
+
+   12. #table-section
+
+*/
+
+
 
 /* Selectors used: .content-wrapper, .main-header, .hero-title, .top-nav, .musketeer-table, .site-footer, #photo-gallery, #table-section */
 
