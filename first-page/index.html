@@ -3,34 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Three Musketeers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="top">
 
-<header>
-    <h1>Three Musketeers</h1>
+<header class="main-header">
+    <h1 class="hero-title">3 Musketeers Candy</h1>
+    <!-- FONTAWESOME1 -->
+    <i class="fa-solid fa-candy-cane fa-2x"></i>
 </header>
 
-<nav>
-    <!-- Navigation will go here later -->
+<nav class="top-nav">
+    <a href="#top">Candy Home</a>
+    <a href="#table-section">Nutrition & History</a>
 </nav>
 
-<main>
+<main class="content-wrapper">
 
-    <section>
-        <h2>Photos</h2>
+    <section id="photo-gallery" class="gallery-section">
+        <h2 class="section-heading">The Fluffy Chocolate Treat</h2>
 
-        <img src="images/image1.jpg" alt="Musketeer 1" width="300">
-        <img src="images/image2.jpg" alt="Musketeer 2" width="300">
-        <img src="images/image3.jpg" alt="Musketeer 3" width="300">
+        <img src="images/image1.jpg" alt="3 Musketeers Bar Wrapper" class="candy-img" width="300">
+        <img src="images/image2.jpg" alt="Inside the Fluffy Nougat" class="candy-img" width="300">
+        <img src="images/image3.jpg" alt="3 Musketeers Fun Size" class="candy-img" width="300">
 
+    </section>
+
+    <section id="table-section" class="data-section">
+        <h2 class="section-heading">Sweet Statistics</h2>
+        <table class="musketeer-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Detail</th>
+                    <th>Why We Love It</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Original Flavor</td>
+                    <td>Chocolate, Vanilla, Strawberry</td>
+                    <td>Originally came in three pieces with three flavors!</td>
+                </tr>
+                <tr>
+                    <td>The Nougat</td>
+                    <td>Whipped & Fluffy</td>
+                    <td>Lightweight texture that melts in your mouth.</td>
+                </tr>
+                <tr>
+                    <td>Calories</td>
+                    <td>240 per bar</td>
+                    <td>A satisfying treat for any chocolate lover.</td>
+                </tr>
+                <tr>
+                    <td>Tagline</td>
+                    <td>"Nice and Light"</td>
+                    <td>Focuses on the airy texture of the center.</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
 </main>
 
-<footer>
-    <!-- Footer content later -->
+<footer class="site-footer">
+    <!-- FONTAWESOME2 -->
+    <i class="fa-solid fa-cookie-bite fa-2x"></i>
+    <p>&copy; 2026 3 Musketeers Candy Appreciation Page</p>
 </footer>
 
 </body>
