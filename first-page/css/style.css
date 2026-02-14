@@ -47,7 +47,6 @@ body {
         max-width: var(--max-width);
         width: 100%;
 }
-
 .hero-title {
         /* GOOGLEFONT2 */
         font-family: 'MedievalSharp', cursive;
@@ -77,61 +76,6 @@ body {
 .top-nav a:hover {
         color: #d32f2f; /* Red from the candy bar logo */
         border-bottom: 2px solid #d32f2f;
-}
-
-#photo-gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 1.5rem;
-        align-items: start;
-        justify-items: center;
-        margin-bottom: 3rem;
-}
-
-/* Table styling */
-.musketeer-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 1.5rem 0;
-        font-size: 1.1rem;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-
-.musketeer-table thead tr {
-        background-color: var(--accent);
-        color: #ffffff;
-        text-align: left;
-}
-
-.musketeer-table th,
-.musketeer-table td {
-        padding: 12px 15px;
-        border: 1px solid #efebe9;
-}
-
-/* Alternating row colors */
-.musketeer-table tbody tr:nth-of-type(even) {
-        background-color: #fce4ec; /* Light pinkish-red hints */
-}
-
-.musketeer-table tbody tr:nth-of-type(odd) {
-        background-color: #ffffff;
-}
-
-.musketeer-table tbody tr:last-of-type {
-        border-bottom: 3px solid var(--accent);
-}
-.site-footer {
-	margin-top: 2rem;
-	text-align: center;
-	color: var(--muted);
-	font-size: 0.95rem;
-	width: 100%;
-}
-
-.site-footer i {
-	margin-bottom: 0.5rem;
-	display: block;
 }
 
 .section-heading {
